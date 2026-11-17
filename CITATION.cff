@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "Code and data for: Do large language models and agents out-forecast time-series foundation models?"
+type: software
+authors:
+  - family-names: "Gul"
+    given-names: "Aqib"
+    # TODO: add co-authors, ORCID and affiliation before release
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-17"
+repository-code: "https://github.com/TODO/llm-ts-forecasting"
+keywords:
+  - time series forecasting
+  - foundation models
+  - large language models
+  - benchmark

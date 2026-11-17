@@ -1,0 +1,19 @@
+# torch is installed separately with the CUDA wheel:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu128
+numpy
+pandas
+scipy
+statsmodels
+statsforecast
+lightgbm
+scikit-learn
+pyarrow
+requests
+tqdm
+pyyaml
+matplotlib
+# foundation models / LLMs (install after torch)
+chronos-forecasting
+transformers
+accelerate
+bitsandbytes

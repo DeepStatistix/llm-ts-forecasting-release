@@ -1,0 +1,153 @@
+
+== flu / agent LLM qwen3_8b: 396 rows
+                                   model  MASE   WQL  cov80
+                             base_oracle 0.825 0.301  0.956
+                               timesfm25 0.951 0.310  0.768
+                                chronos2 0.950 0.311  0.768
+ctrl_best_fixed(chronos_bolt_small,0.8x) 1.181 0.369  0.756
+                      chronos_bolt_small 1.181 0.374  0.864
+                                   theta 1.181 0.392  0.884
+                           base_ensemble 1.224 0.469  0.966
+                          agent_qwen3_8b 1.543 0.511  0.857
+                                   naive 1.578 0.555  0.899
+                             base_random 1.517 0.569  0.891
+                                  snaive 2.176 0.931  0.926
+                       prompted_qwen3_8b 3.260 1.147  0.394
+  agent vs best single candidate (chronos_bolt_small): mean loss diff +0.1361 [+0.0469,+0.2428] p=0.0087 over 36 origins
+  agent vs best fixed (candidate, width) ('chronos_bolt_small', 0.8): mean loss diff +0.1415 [+0.0467,+0.2542] p=0.0070 over 36 origins
+  agent vs ensemble: mean loss diff +0.0412 [-0.0384,+0.1439] p=0.3889 over 36 origins
+  agent vs random pick: mean loss diff -0.0585 [-0.0949,-0.0193] p=0.0022 over 36 origins
+
+== flu / agent LLM mistral7b: 396 rows
+                                   model  MASE   WQL  cov80
+                             base_oracle 0.825 0.301  0.956
+                               timesfm25 0.951 0.310  0.768
+                                chronos2 0.950 0.311  0.768
+ctrl_best_fixed(chronos_bolt_small,0.8x) 1.181 0.369  0.756
+                      chronos_bolt_small 1.181 0.374  0.864
+                                   theta 1.181 0.392  0.884
+                           base_ensemble 1.224 0.469  0.966
+                         agent_mistral7b 1.433 0.502  0.858
+                                   naive 1.578 0.555  0.899
+                             base_random 1.517 0.569  0.891
+                                  snaive 2.176 0.931  0.926
+                      prompted_mistral7b 6.932 2.786  0.180
+  agent vs best single candidate (chronos_bolt_small): mean loss diff +0.1278 [+0.0465,+0.2405] p=0.0147 over 36 origins
+  agent vs best fixed (candidate, width) ('chronos_bolt_small', 0.8): mean loss diff +0.1331 [+0.0469,+0.2495] p=0.0145 over 36 origins
+  agent vs ensemble: mean loss diff +0.0328 [-0.0426,+0.1433] p=0.5390 over 36 origins
+  agent vs random pick: mean loss diff -0.0668 [-0.1152,-0.0273] p=0.0048 over 36 origins
+fred_task: dropped defective vintage file(s): ['2026-08']
+
+== fred / agent LLM qwen3_8b: 300 rows
+                                   model  MASE   WQL  cov80
+                             base_oracle 0.701 0.222  0.841
+                                chronos2 0.711 0.231  0.783
+ctrl_best_fixed(chronos_bolt_small,1.0x) 0.727 0.234  0.784
+                      chronos_bolt_small 0.727 0.234  0.784
+                               timesfm25 0.726 0.239  0.776
+                                   theta 0.763 0.293  0.889
+                           base_ensemble 0.811 0.326  0.938
+                          agent_qwen3_8b 0.845 0.332  0.870
+                             base_random 0.907 0.350  0.870
+                                  snaive 1.091 0.411  0.909
+                       prompted_qwen3_8b 1.265 0.461  0.453
+                                   naive 0.945 0.471  0.964
+  agent vs best single candidate (chronos_bolt_small): mean loss diff +0.0907 [+0.0670,+0.1171] p=0.0001 over 8 origins
+  agent vs best fixed (candidate, width) ('chronos_bolt_small', 1.0): mean loss diff +0.0907 [+0.0678,+0.1158] p=0.0001 over 8 origins
+  agent vs ensemble: mean loss diff +0.0027 [-0.0164,+0.0189] p=0.7654 over 8 origins
+  agent vs random pick: mean loss diff -0.0204 [-0.0535,+0.0136] p=0.2545 over 8 origins
+
+== fred / agent LLM mistral7b: 300 rows
+                                   model  MASE   WQL  cov80
+                             base_oracle 0.701 0.222  0.841
+                                chronos2 0.711 0.231  0.783
+ctrl_best_fixed(chronos_bolt_small,1.0x) 0.727 0.234  0.784
+                      chronos_bolt_small 0.727 0.234  0.784
+                               timesfm25 0.726 0.239  0.776
+                                   theta 0.763 0.293  0.889
+                         agent_mistral7b 0.825 0.321  0.865
+                           base_ensemble 0.811 0.326  0.938
+                             base_random 0.907 0.350  0.870
+                                  snaive 1.091 0.411  0.909
+                                   naive 0.945 0.471  0.964
+                      prompted_mistral7b 1.664 0.645  0.348
+  agent vs best single candidate (chronos_bolt_small): mean loss diff +0.0818 [+0.0689,+0.0921] p=0.0001 over 8 origins
+  agent vs best fixed (candidate, width) ('chronos_bolt_small', 1.0): mean loss diff +0.0818 [+0.0692,+0.0921] p=0.0001 over 8 origins
+  agent vs ensemble: mean loss diff -0.0062 [-0.0138,+0.0015] p=0.1318 over 8 origins
+  agent vs random pick: mean loss diff -0.0294 [-0.0468,-0.0123] p=0.0005 over 8 origins
+
+== wiki / agent LLM qwen3_8b: 120 rows
+                                   model  MASE   WQL  cov80
+                               timesfm25 0.898 0.308  0.775
+                             base_oracle 0.920 0.316  0.829
+                                chronos2 0.928 0.320  0.768
+                      chronos_bolt_small 0.974 0.334  0.779
+ctrl_best_fixed(chronos_bolt_small,1.0x) 0.974 0.334  0.779
+                           base_ensemble 1.151 0.449  0.924
+                          agent_qwen3_8b 1.203 0.453  0.858
+                             base_random 1.211 0.476  0.860
+                                   theta 1.242 0.493  0.915
+                                  snaive 1.297 0.519  0.900
+                                   naive 1.395 0.569  0.929
+                       prompted_qwen3_8b 1.676 0.630  0.443
+  agent vs best single candidate (chronos_bolt_small): mean loss diff +0.1056 [+0.0627,+0.1527] p=0.0001 over 21 origins
+  agent vs best fixed (candidate, width) ('chronos_bolt_small', 1.0): mean loss diff +0.1056 [+0.0625,+0.1541] p=0.0001 over 21 origins
+  agent vs ensemble: mean loss diff -0.0046 [-0.0235,+0.0140] p=0.6407 over 21 origins
+  agent vs random pick: mean loss diff -0.0312 [-0.0679,+0.0028] p=0.0848 over 21 origins
+
+== wiki / agent LLM mistral7b: 120 rows
+                                   model  MASE   WQL  cov80
+                               timesfm25 0.898 0.308  0.775
+                             base_oracle 0.920 0.316  0.829
+                                chronos2 0.928 0.320  0.768
+                      chronos_bolt_small 0.974 0.334  0.779
+ctrl_best_fixed(chronos_bolt_small,1.0x) 0.974 0.334  0.779
+                           base_ensemble 1.151 0.449  0.924
+                         agent_mistral7b 1.194 0.450  0.866
+                             base_random 1.211 0.476  0.860
+                                   theta 1.242 0.493  0.915
+                                  snaive 1.297 0.519  0.900
+                                   naive 1.395 0.569  0.929
+                      prompted_mistral7b 3.178 1.233  0.273
+  agent vs best single candidate (chronos_bolt_small): mean loss diff +0.1040 [+0.0583,+0.1531] p=0.0001 over 21 origins
+  agent vs best fixed (candidate, width) ('chronos_bolt_small', 1.0): mean loss diff +0.1040 [+0.0589,+0.1531] p=0.0001 over 21 origins
+  agent vs ensemble: mean loss diff -0.0062 [-0.0236,+0.0123] p=0.5070 over 21 origins
+  agent vs random pick: mean loss diff -0.0328 [-0.0686,+0.0058] p=0.0843 over 21 origins
+
+== eia / agent LLM qwen3_8b: 16 rows
+                     model  MASE   WQL  cov80
+               base_oracle 1.432 0.460  0.727
+                  chronos2 1.524 0.500  0.608
+ctrl_best_fixed(mstl,0.8x) 1.632 0.527  0.739
+                      mstl 1.632 0.531  0.835
+                 timesfm25 1.737 0.573  0.597
+        chronos_bolt_small 1.647 0.592  0.468
+             base_ensemble 1.769 0.617  0.935
+                    snaive 2.135 0.686  0.793
+            agent_qwen3_8b 2.104 0.743  0.667
+               base_random 2.217 0.764  0.670
+         prompted_qwen3_8b 2.544 0.982  0.436
+                     naive 3.473 1.301  0.932
+  agent vs best single candidate (mstl): mean loss diff +0.2311 [+0.0323,+0.4806] p=0.0400 over 13 origins
+  agent vs best fixed (candidate, width) ('mstl', 0.8): mean loss diff +0.2358 [+0.0416,+0.4775] p=0.0312 over 13 origins
+  agent vs ensemble: mean loss diff +0.1452 [-0.0418,+0.3885] p=0.1904 over 13 origins
+  agent vs random pick: mean loss diff +0.0349 [-0.2161,+0.3058] p=0.7892 over 13 origins
+
+== eia / agent LLM mistral7b: 16 rows
+                     model  MASE   WQL  cov80
+               base_oracle 1.432 0.460  0.727
+                  chronos2 1.524 0.500  0.608
+ctrl_best_fixed(mstl,0.8x) 1.632 0.527  0.739
+                      mstl 1.632 0.531  0.835
+                 timesfm25 1.737 0.573  0.597
+        chronos_bolt_small 1.647 0.592  0.468
+             base_ensemble 1.769 0.617  0.935
+           agent_mistral7b 1.927 0.657  0.825
+                    snaive 2.135 0.686  0.793
+               base_random 2.217 0.764  0.670
+                     naive 3.473 1.301  0.932
+        prompted_mistral7b 4.177 1.387  0.650
+  agent vs best single candidate (mstl): mean loss diff +0.0752 [-0.0543,+0.2078] p=0.2560 over 13 origins
+  agent vs best fixed (candidate, width) ('mstl', 0.8): mean loss diff +0.0799 [-0.0575,+0.2225] p=0.2616 over 13 origins
+  agent vs ensemble: mean loss diff -0.0107 [-0.1235,+0.1122] p=0.8596 over 13 origins
+  agent vs random pick: mean loss diff -0.1210 [-0.2404,-0.0088] p=0.0393 over 13 origins
